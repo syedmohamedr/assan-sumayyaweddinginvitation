@@ -1,39 +1,45 @@
 /* ===================================================================
    LUXURY WEDDING INVITATION — MOBILE-FIRST DESIGN SYSTEM
-   Theme: Royal Burgundy & Champagne Gold / Ivory
+   Theme: Royal Sapphire Blue & Champagne Gold / Ivory
    =================================================================== */
 
 :root {
-  /* Royal Burgundy Palette */
-  --bg-burgundy-deep: #260710;
-  --bg-burgundy-mid: #3a0b18;
-  --bg-burgundy-light: #521324;
-  --bg-burgundy-darkest: #150308;
+  /* Royal Blue Palette */
+  --bg-royalblue-deep: #0a1b38;
+  --bg-royalblue-mid: #0f2b5c;
+  --bg-royalblue-light: #163b7d;
+  --bg-royalblue-darkest: #040c1c;
 
   /* Aliases for backwards compatibility */
-  --bg-emerald-deep: var(--bg-burgundy-deep);
-  --bg-emerald-mid: var(--bg-burgundy-mid);
-  --bg-emerald-light: var(--bg-burgundy-light);
-  --bg-emerald-darkest: var(--bg-burgundy-darkest);
+  --bg-burgundy-deep: var(--bg-royalblue-deep);
+  --bg-burgundy-mid: var(--bg-royalblue-mid);
+  --bg-burgundy-light: var(--bg-royalblue-light);
+  --bg-burgundy-darkest: var(--bg-royalblue-darkest);
+
+  --bg-emerald-deep: var(--bg-royalblue-deep);
+  --bg-emerald-mid: var(--bg-royalblue-mid);
+  --bg-emerald-light: var(--bg-royalblue-light);
+  --bg-emerald-darkest: var(--bg-royalblue-darkest);
 
   /* Ivory / Cream Palette */
-  --bg-ivory-light: #fdfaf6;
-  --bg-ivory-warm: #f6efe4;
-  --text-ivory-dark: #260710;
-  --text-ivory-muted: #64454e;
+  --bg-ivory-light: #fbf9f5;
+  --bg-ivory-warm: #f4ede2;
+  --text-ivory-dark: #09172e;
+  --text-ivory-muted: #384b6d;
 
   /* Metallic Gold Palette */
   --gold-primary: #d4af37;
-  --gold-light: #f5e6c8;
-  --gold-bright: #fff3db;
+  --gold-light: #f7e8c6;
+  --gold-bright: #fff4dc;
   --gold-dark: #9e781e;
   --gold-border: rgba(212, 175, 55, 0.45);
-  --gold-border-glow: rgba(212, 175, 55, 0.25);
+  --gold-border-glow: rgba(212, 175, 55, 0.28);
 
   /* Gradients */
-  --grad-burgundy: linear-gradient(180deg, #280812 0%, #3d0d1b 50%, #1c040b 100%);
-  --grad-emerald: var(--grad-burgundy);
-  --grad-ivory: linear-gradient(180deg, #fdfaf6 0%, #f5eee3 100%);
+  --grad-royalblue: linear-gradient(180deg, #091a38 0%, #102d62 50%, #051022 100%);
+  --grad-burgundy: var(--grad-royalblue);
+  --grad-emerald: var(--grad-royalblue);
+  --grad-ivory: linear-gradient(180deg, #fbf9f5 0%, #f4ede2 100%);
   --grad-gold-foil: linear-gradient(135deg, #d4af37 0%, #f6e2b3 35%, #e2b755 70%, #aa7c11 100%);
   --grad-gold-ambient: linear-gradient(180deg, #d8bc88 0%, #ebd7b2 45%, #c89e5a 100%);
 
@@ -110,7 +116,7 @@ body.is-locked {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(42, 8, 18, 0.85);
+  background: rgba(10, 27, 56, 0.85);
   border: 1px solid var(--gold-border);
   border-radius: 30px;
   padding: 6px 14px 6px 8px;
@@ -190,7 +196,7 @@ body.is-locked {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle at 50% 45%, #460f1f 0%, #2c0813 45%, #150308 100%);
+  background: radial-gradient(circle at 50% 45%, #153a7a 0%, #0b1f44 45%, #040c1c 100%);
   padding: 24px;
   text-align: center;
   transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.9s ease;
@@ -497,7 +503,7 @@ body.is-locked {
   font-size: 1.35rem;
   line-height: 1.6;
   font-weight: 400;
-  color: #2b0813;
+  color: #09172e;
   margin: 10px 0 20px;
   padding: 0 10px;
 }
@@ -525,7 +531,7 @@ body.is-locked {
   font-size: clamp(2rem, 7vw, 2.5rem);
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: #260710;
+  color: #09172e;
   line-height: 1.2;
   margin: 6px 0;
 }
@@ -562,7 +568,7 @@ body.is-locked {
   font-size: 1.05rem;
   font-style: italic;
   line-height: 1.6;
-  color: #2b0813;
+  color: #09172e;
   margin-bottom: 10px;
 }
 
@@ -576,16 +582,18 @@ body.is-locked {
 }
 
 /* ===================================================================
-   PANEL 2: ROYAL BURGUNDY COUPLE PRESENTATION
+   PANEL 2: ROYAL BLUE COUPLE PRESENTATION
    =================================================================== */
 .card-emerald,
-.card-burgundy {
-  background: var(--grad-burgundy);
+.card-burgundy,
+.card-royalblue {
+  background: var(--grad-royalblue);
   color: var(--gold-light);
 }
 
 .card-emerald::before,
-.card-burgundy::before {
+.card-burgundy::before,
+.card-royalblue::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -594,7 +602,8 @@ body.is-locked {
 }
 
 .emerald-top-label,
-.burgundy-top-label {
+.burgundy-top-label,
+.royalblue-top-label {
   font-family: var(--font-sans);
   font-size: 0.72rem;
   font-weight: 500;
@@ -656,7 +665,7 @@ body.is-locked {
    =================================================================== */
 .card-gold-ambient {
   background: var(--grad-gold-ambient);
-  color: #260710;
+  color: #09172e;
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.15);
 }
 
@@ -678,7 +687,7 @@ body.is-locked {
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.22em;
-  background: #260710;
+  background: #0a1b38;
   color: var(--gold-light);
   padding: 4px 12px;
   border-radius: 20px;
@@ -689,7 +698,7 @@ body.is-locked {
   font-family: var(--font-serif-heading);
   font-size: 1.45rem;
   font-weight: 600;
-  color: #260710;
+  color: #09172e;
 }
 
 /* Scratch Box */
@@ -701,7 +710,7 @@ body.is-locked {
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   border: 2px solid #b8923b;
-  background: #260710;
+  background: #0a1b38;
 }
 
 .scratch-reveal-content {
@@ -712,7 +721,7 @@ body.is-locked {
   align-items: center;
   justify-content: center;
   padding: 16px;
-  background: radial-gradient(circle, #460f1f 0%, #240610 100%);
+  background: radial-gradient(circle, #153a7a 0%, #07152d 100%);
   color: #fff9ed;
   text-align: center;
   z-index: 1;
@@ -784,8 +793,8 @@ body.is-locked {
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.08em;
-  color: #260710;
-  background: rgba(255, 255, 255, 0.4);
+  color: #09172e;
+  background: rgba(255, 255, 255, 0.5);
   padding: 6px 16px;
   border-radius: 20px;
 }
@@ -826,7 +835,7 @@ body.is-locked {
 }
 
 .timer-card {
-  background: rgba(62, 14, 28, 0.65);
+  background: rgba(15, 43, 92, 0.65);
   border: 1px solid var(--gold-border);
   border-radius: 10px;
   padding: 16px 6px;
@@ -902,7 +911,7 @@ body.is-locked {
 /* Map Card */
 .map-card-preview {
   width: 100%;
-  background: rgba(62, 14, 28, 0.75);
+  background: rgba(15, 43, 92, 0.75);
   border: 1px solid var(--gold-border);
   border-radius: 12px;
   padding: 22px 18px;
@@ -975,7 +984,7 @@ body.is-locked {
 
 .btn-primary-gold {
   background: var(--grad-gold-foil);
-  color: #260710;
+  color: #09172e;
   border: 1px solid transparent;
   box-shadow: 0 4px 18px rgba(212, 175, 55, 0.3);
 }
@@ -1081,7 +1090,7 @@ body.is-locked {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: rgba(62, 14, 28, 0.85);
+  background: rgba(15, 43, 92, 0.85);
   border: 1px solid var(--gold-border);
   color: var(--gold-primary);
   font-size: 1.2rem;
@@ -1094,7 +1103,7 @@ body.is-locked {
 
 .btn-scroll-top:hover {
   background: var(--gold-primary);
-  color: #260710;
+  color: #09172e;
   transform: translateY(-3px);
 }
 
@@ -1110,7 +1119,7 @@ body.is-locked {
 }
 
 .customizer-toggle-btn {
-  background: rgba(42, 8, 18, 0.95);
+  background: rgba(10, 27, 56, 0.95);
   border: 1px solid var(--gold-border);
   color: var(--gold-light);
   padding: 8px 14px;
@@ -1215,7 +1224,7 @@ body.is-locked {
 
 .btn-customizer-primary {
   background: var(--gold-primary);
-  color: #260710;
+  color: #09172e;
   border: none;
 }
 
@@ -1231,7 +1240,7 @@ body.is-locked {
    =================================================================== */
 @media (min-width: 600px) {
   body {
-    background: radial-gradient(ellipse at 50% 50%, #2e0915 0%, #120206 100%);
+    background: radial-gradient(ellipse at 50% 50%, #0d2146 0%, #030812 100%);
   }
 
   .invitation-main {

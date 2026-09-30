@@ -3,13 +3,13 @@
 > **Assan A & Sumayya J — 20 December 2026**  
 > **Venue: Pankaja Auditorium, Mudappaloor**
 
-A luxury, mobile-first digital wedding invitation website crafted with an opulent Royal Emerald Green and Champagne Gold aesthetic, inspired by modern royal wedding cards.
+A luxury, mobile-first digital wedding invitation website crafted with an opulent Royal Sapphire Blue and Champagne Gold aesthetic, inspired by modern royal wedding cards.
 
 ---
 
 ## ✨ Features Included
 
-- **Cinematic Opening Cover**: Elegant emerald green hero screen with Bismillah, gold diamond motif, couple names, and animated `[ OPEN INVITATION → ]` CTA.
+- **Cinematic Opening Cover**: Elegant royal blue hero screen with Arabic Bismillah typography, gold diamond motif, couple names, and animated `[ OPEN INVITATION → ]` CTA.
 - **Tap to Open Animation**: Smooth transition unsealing the invitation, fading in background music, and bursting romantic flower petals.
 - **Metallic Gold Shimmer Effects**: High-contrast luxury serif typography with sweeping golden foil reflections and fine hairline borders.
 - **Interactive Scratch-to-Reveal Date**: Real-time canvas scratch card with finger/mouse touch support and fluid erase physics.

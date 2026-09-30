@@ -454,7 +454,7 @@
 
     // Cover Text
     ctx.textAlign = 'center';
-    ctx.fillStyle = '#260710';
+    ctx.fillStyle = '#09172e';
 
     ctx.font = 'bold 11px Montserrat, sans-serif';
     ctx.fillText('✨ SPECIAL REVEAL ✨', w / 2, h / 2 - 28);
@@ -582,9 +582,9 @@
 
   function burstPetals(originX, originY, count = 50) {
     const colors = [
-      '145, 18, 48',   // Royal burgundy rose
-      '210, 40, 70',   // Rich crimson wine
-      '250, 130, 160', // Soft blush pink
+      '14, 43, 92',    // Deep royal sapphire blue
+      '25, 70, 145',   // Rich royal blue
+      '65, 125, 210',  // Soft celestial blue
       '255, 245, 235', // Warm ivory
       '212, 175, 55'   // Gold
     ];
