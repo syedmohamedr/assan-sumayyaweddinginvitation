@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#260710">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description" content="Wedding Invitation of Assan A & Sumayya J — 20 December 2026 at Pankaja Auditorium, Mudappaloor.">
+  
+  <!-- Open Graph / WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wedding Invitation: Assan A & Sumayya J">
+  <meta property="og:description" content="You're cordially invited to celebrate the wedding of Assan A & Sumayya J on 20th December 2026 at Pankaja Auditorium, Mudappaloor. Tap to open invitation.">
+  <meta property="og:image" content="assets/icons/crest.svg">
+  
+  <title>Wedding Invitation | Assan A & Sumayya J</title>
+
+  <!-- Google Fonts for Luxury Royal Aesthetics -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Great+Vibes&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-locked">
+
+  <!-- Background Ambience & Stardust Canvas -->
+  <canvas id="stardustCanvas" class="stardust-canvas"></canvas>
+  <canvas id="petalCanvas" class="petal-canvas"></canvas>
+
+  <!-- Audio Controls Floating Button -->
+  <button id="audioToggleBtn" class="audio-toggle-btn" aria-label="Toggle Wedding Music">
+    <div class="audio-disc">
+      <div class="sound-wave">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+        <span class="bar bar-4"></span>
+      </div>
+    </div>
+    <span class="audio-label">MUSIC</span>
+  </button>
+
+  <!-- ==============================================================
+       COVER / HERO SCREEN (SCREEN 1 - OPENING INVITATION)
+       ============================================================== -->
+  <section id="coverHero" class="cover-hero">
+    <div class="cover-content">
+      <!-- Top Spiritual Text -->
+      <div class="spiritual-tag" id="coverBismillah">BISMILLAHI RAHMANI RAHIM</div>
+      
+      <!-- Golden Diamond Divider -->
+      <div class="golden-motif-line">
+        <span class="motif-line-left"></span>
+        <span class="motif-diamond">✦</span>
+        <span class="motif-line-right"></span>
+      </div>
+
+      <!-- Couple Names in Luxury Serif -->
+      <div class="couple-hero-names">
+        <h1 class="groom-name" id="heroGroomName">ASSAN A</h1>
+        <div class="hero-ampersand">&amp;</div>
+        <h1 class="bride-name" id="heroBrideName">SUMAYYA J</h1>
+      </div>
+
+      <!-- Wedding Date -->
+      <div class="hero-date" id="heroDateNumeric">20 • 12 • 2026</div>
+
+      <!-- Open Invitation CTA Button -->
+      <div class="open-btn-container">
+        <button id="openInvitationBtn" class="btn-open-invitation">
+          <span class="btn-shine"></span>
+          <span class="btn-text">OPEN INVITATION</span>
+          <span class="btn-arrow">→</span>
+        </button>
+      </div>
+
+      <!-- Subtle hint -->
+      <p class="tap-hint">Tap to unfold our special day</p>
+    </div>
+  </section>
+
+  <!-- ==============================================================
+       MAIN INVITATION WRAPPER (MOBILE-FIRST SCROLLING EXPERIENCE)
+       ============================================================== -->
+  <main id="invitationContent" class="invitation-main">
+
+    <!-- PANEL 1: CREAM / IVORY BLESSING & GRATITUDE CARD -->
+    <section class="card-section card-ivory" data-reveal>
+      <div class="card-inner">
+        <!-- Luxury Gold Crest -->
+        <div class="crest-container">
+          <img src="assets/icons/crest.svg" alt="Royal Crest" class="gold-crest-icon">
+        </div>
+
+        <!-- Arabic Bismillah Calligraphy -->
+        <div class="bismillah-container">
+          <img src="assets/icons/bismillah.svg" alt="Bismillah Calligraphy" class="bismillah-icon">
+        </div>
+
+        <!-- Emotional Gratitude Message -->
+        <blockquote class="gratitude-quote" id="textOpeningGratitude">
+          “With hearts full of gratitude and happiness, we invite you to celebrate the beginning of a beautiful journey together.”
+        </blockquote>
+
+        <!-- Gold Star Divider -->
+        <div class="gold-star-divider">✦</div>
+
+        <!-- Save the date tag -->
+        <div class="save-tag" id="textSaveTheDate">SAVE THE DATE</div>
+
+        <!-- Connecting Line to next panel -->
+        <div class="connector-line"></div>
+      </div>
+    </section>
+
+    <!-- PANEL 2: ROYAL EMERALD COUPLE PRESENTATION -->
+    <section class="card-section card-emerald" data-reveal>
+      <div class="card-inner">
+        <div class="emerald-top-label" id="textTogetherFamilies">TOGETHER WITH OUR FAMILIES</div>
+
+        <div class="couple-display-group">
+          <div class="couple-title-name" id="sectionGroomName">ASSAN A</div>
+          <div class="flourished-amp">&amp;</div>
+          <div class="couple-title-name" id="sectionBrideName">SUMAYYA J</div>
+        </div>
+
+        <p class="invitation-subtext" id="textRequestHonour">
+          request the honour of your presence at their wedding celebration
+        </p>
+
+        <div class="scroll-cue">
+          <span class="scroll-arrow">↓</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 3: LUXURY GOLD INTERACTIVE SCRATCH-TO-REVEAL SECTION -->
+    <section class="card-section card-gold-ambient" data-reveal>
+      <div class="scratch-card-wrapper">
+        <div class="scratch-card-header">
+          <span class="scratch-badge">EXCLUSIVE REVEAL</span>
+          <h3 class="scratch-heading">A Special Date Awaits</h3>
+        </div>
+
+        <!-- Scratch Box Container -->
+        <div class="scratch-box" id="scratchBox">
+          <!-- Revealed Content (Hidden underneath canvas) -->
+          <div class="scratch-reveal-content">
+            <div class="revealed-icon">💍</div>
+            <div class="revealed-tag">THE AUSPICIOUS DAY</div>
+            <div class="revealed-date" id="revealedDateText">20 DECEMBER 2026</div>
+            <div class="revealed-time" id="revealedTimeText">SUNDAY • 11:00 AM TO 3:00 PM</div>
+            <div class="revealed-venue" id="revealedVenueText">Pankaja Auditorium, Mudappaloor</div>
+            <div class="revealed-status" id="scratchSuccessMsg">✨ We can't wait to see you! ✨</div>
+          </div>
+
+          <!-- HTML5 Scratch Canvas -->
+          <canvas id="scratchCanvas" class="scratch-canvas" width="340" height="230"></canvas>
+        </div>
+
+        <div class="scratch-instruction" id="scratchInstruction">
+          <span class="finger-icon">👆</span>
+          <span>Touch &amp; scratch the card to reveal the date</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 4: ROYAL EMERALD COUNTDOWN TIMER -->
+    <section class="card-section card-emerald countdown-section" data-reveal>
+      <div class="card-inner">
+        <div class="countdown-eyebrow" id="textCountdownHeading">COUNTING DOWN TO FOREVER</div>
+
+        <!-- 4 Column Live Timer -->
+        <div class="timer-grid">
+          <div class="timer-card">
+            <span class="timer-number" id="timerDays">00</span>
+            <span class="timer-unit">DAYS</span>
+          </div>
+          <div class="timer-card">
+            <span class="timer-number" id="timerHours">00</span>
+            <span class="timer-unit">HOURS</span>
+          </div>
+          <div class="timer-card">
+            <span class="timer-number" id="timerMinutes">00</span>
+            <span class="timer-unit">MIN</span>
+          </div>
+          <div class="timer-card">
+            <span class="timer-number" id="timerSeconds">00</span>
+            <span class="timer-unit">SEC</span>
+          </div>
+        </div>
+
+        <div class="gold-star-divider small">✦</div>
+      </div>
+    </section>
+
+    <!-- PANEL 5: WARM IVORY EVENT DETAILS & HOLY BLESSING -->
+    <section class="card-section card-ivory" data-reveal>
+      <div class="card-inner">
+        <div class="join-us-label">JOIN US ON</div>
+        <div class="gold-star-divider small">✦</div>
+
+        <!-- Big Highlighted Date -->
+        <div class="main-event-date" id="eventDateBig">20 DECEMBER 2026</div>
+        <div class="main-event-daytime" id="eventDayTime">Sunday • 11:00 AM TO 3:00 PM</div>
+        <div class="main-event-celebration">at our wedding celebration</div>
+
+        <div class="holy-verse-box">
+          <p class="holy-verse-text" id="textHolyQuote">
+            “And among His signs is that He created for you mates from among yourselves, that you may dwell in tranquility with them; and He has put love and mercy between your hearts.”
+          </p>
+          <span class="holy-verse-source" id="textHolyQuoteSource">— Holy Quran (Surah Ar-Rum 30:21)</span>
+        </div>
+
+        <div class="connector-line"></div>
+      </div>
+    </section>
+
+    <!-- PANEL 6: VENUE LOCATION & ACTIONS -->
+    <section class="card-section card-emerald venue-section" data-reveal>
+      <div class="card-inner">
+        <div class="venue-eyebrow">THE VENUE</div>
+        <h2 class="venue-name" id="venueNameText">Pankaja Auditorium</h2>
+        <p class="venue-city" id="venueCityText">Mudappaloor, Palakkad</p>
+
+        <!-- Location Card & Google Map Preview -->
+        <div class="map-card-preview">
+          <div class="map-decorative-ring">
+            <span class="map-pin-icon">📍</span>
+          </div>
+          <div class="map-info-text">
+            <div class="map-heading">Pankaja Auditorium</div>
+            <div class="map-subheading">Mudappaloor, Palakkad District, Kerala</div>
+          </div>
+        </div>
+
+        <!-- Main Action Buttons -->
+        <div class="action-buttons-group">
+          <!-- Google Maps Button -->
+          <a id="btnMapDirections" href="https://maps.app.goo.gl/8tPDfiJvE3bpFy9u6?g_st=aw" target="_blank" rel="noopener noreferrer" class="btn-primary-gold">
+            <span class="btn-icon">📍</span>
+            <span>GET DIRECTIONS</span>
+          </a>
+
+          <!-- Add to Calendar Button -->
+          <button id="btnAddToCalendar" class="btn-secondary-outline">
+            <span class="btn-icon">📅</span>
+            <span>ADD TO CALENDAR</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 7: WILL YOU JOIN US & RSVP / SHARING -->
+    <section class="card-section card-emerald rsvp-section" data-reveal>
+      <div class="card-inner">
+        <div class="rsvp-eyebrow">CORDIAL INVITATION</div>
+        <h2 class="rsvp-title" id="textWillYouJoin">WILL YOU JOIN US?</h2>
+        <p class="rsvp-desc" id="textWillYouJoinSub">
+          Your presence would make our special day even more meaningful and blessed.
+        </p>
+
+        <div class="rsvp-buttons-group">
+          <!-- RSVP via WhatsApp -->
+          <a id="btnWhatsAppRsvp" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-gold">
+            <span class="btn-icon">💬</span>
+            <span>RSVP VIA WHATSAPP</span>
+          </a>
+
+          <!-- Share Invitation -->
+          <button id="btnShareInvite" class="btn-secondary-outline">
+            <span class="btn-icon">💌</span>
+            <span>SHARE INVITATION</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PANEL 8: CLOSING BLESSING & POEM (EXACT MATCH TO REFERENCE FOOTER) -->
+    <section class="card-section card-emerald footer-section" data-reveal>
+      <div class="card-inner">
+        <!-- Poetic Quote from Screenshot -->
+        <div class="closing-poem">
+          <p class="poem-line" id="poemLine1">Two hearts,</p>
+          <p class="poem-line" id="poemLine2">One beautiful journey,</p>
+          <p class="poem-line" id="poemLine3">A lifetime of memories waiting to begin.</p>
+        </div>
+
+        <div class="gold-star-divider small">✦</div>
+
+        <!-- Couple Sign-off -->
+        <div class="footer-couple-names">
+          <div class="footer-name" id="footerCoupleName">ASSAN A &amp; SUMAYYA J</div>
+        </div>
+
+        <div class="footer-date" id="footerDateNumeric">20 • 12 • 2026</div>
+
+        <div class="gold-star-divider small">✦</div>
+
+        <p class="footer-gratitude" id="textClosingGratitude">
+          Thank you for being part of our special day!
+        </p>
+
+        <div class="footer-venue-tag" id="footerVenueTag">
+          PANKAJA AUDITORIUM • MUDAPPALOOR
+        </div>
+
+        <div class="back-to-top-wrap">
+          <button id="btnScrollTop" class="btn-scroll-top" aria-label="Back to top">
+            <span>↑</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==============================================================
+       EDIT / CUSTOMIZE HELPER PANEL (DISCREET & COLLAPSIBLE)
+       Allows editing any detail directly with 1 click!
+       ============================================================== -->
+  <aside id="customizerPanel" class="customizer-panel collapsed">
+    <button id="toggleCustomizerBtn" class="customizer-toggle-btn" title="Edit Wedding Details">
+      ⚙️ <span class="toggle-text">Edit Details</span>
+    </button>
+    <div class="customizer-body">
+      <div class="customizer-header">
+        <h4>Customize Invitation</h4>
+        <span class="customizer-sub">Changes update live instantly!</span>
+      </div>
+      <form id="customizerForm">
+        <label>
+          <span>Groom Name:</span>
+          <input type="text" id="inputGroom" value="ASSAN A">
+        </label>
+        <label>
+          <span>Bride Name:</span>
+          <input type="text" id="inputBride" value="SUMAYYA J">
+        </label>
+        <label>
+          <span>Date:</span>
+          <input type="text" id="inputDate" value="20 DECEMBER 2026">
+        </label>
+        <label>
+          <span>Time:</span>
+          <input type="text" id="inputTime" value="11:00 AM TO 3:00 PM">
+        </label>
+        <label>
+          <span>Venue Name:</span>
+          <input type="text" id="inputVenue" value="Pankaja Auditorium">
+        </label>
+        <label>
+          <span>Location:</span>
+          <input type="text" id="inputLocation" value="Mudappaloor">
+        </label>
+        <label>
+          <span>Google Maps Link:</span>
+          <input type="text" id="inputMapLink" value="https://maps.app.goo.gl/8tPDfiJvE3bpFy9u6?g_st=aw">
+        </label>
+        <label>
+          <span>WhatsApp RSVP No (e.g. 919876543210):</span>
+          <input type="text" id="inputWhatsapp" value="919876543210">
+        </label>
+        <div class="customizer-actions">
+          <button type="button" id="btnResetDefaults" class="btn-customizer-secondary">Reset</button>
+          <button type="submit" class="btn-customizer-primary">Apply Live</button>
+        </div>
+      </form>
+    </div>
+  </aside>
+
+  <!-- Load Configuration First -->
+  <script src="config.js"></script>
+  <!-- Load Main Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
