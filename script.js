@@ -38,8 +38,8 @@
 
     const { groom, bride, dateFormatted, dateNumeric, dayOfWeek, timeFormatted, venue, texts, contact } = WEDDING_CONFIG;
 
-    // Cover Screen
-    safeSetText('coverBismillah', texts.bismillahEnglish);
+    // Cover Screen (Arabic Typography)
+    safeSetText('coverBismillah', texts.bismillahArabic || texts.bismillahEnglish);
     safeSetText('heroGroomName', groom.name);
     safeSetText('heroBrideName', bride.name);
     safeSetText('heroDateNumeric', dateNumeric);

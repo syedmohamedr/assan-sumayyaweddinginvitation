@@ -225,14 +225,23 @@ body.is-locked {
 }
 
 .spiritual-tag {
-  font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.25em;
+  font-family: var(--font-arabic), 'Amiri', 'Traditional Arabic', serif;
+  font-size: clamp(1.4rem, 4.5vw, 1.85rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.6;
   color: var(--gold-primary);
-  margin-bottom: 24px;
-  text-transform: uppercase;
-  opacity: 0.95;
+  background: var(--grad-gold-foil);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(212, 175, 55, 0.35));
+  margin-bottom: 20px;
+  text-transform: none;
+  direction: rtl;
+  text-align: center;
+  display: block;
+  padding: 4px 10px;
+  white-space: nowrap;
 }
 
 .golden-motif-line {
